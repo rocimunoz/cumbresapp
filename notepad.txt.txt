@@ -1,0 +1,4 @@
+GRANT INSERT, SELECT, DELETE, UPDATE ON cumbres.* TO 'cumbres'@'localhost' IDENTIFIED BY 'cumbres';
+
+autoincrement
+

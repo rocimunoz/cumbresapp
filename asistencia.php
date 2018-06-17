@@ -1,3 +1,14 @@
+<!--https://www.ecodeup.com/crud-en-php-para-principiantes/-->
+<?php
+include("crud_alumno.php");
+           
+function getCountAlumno($nacimiento) {
+    $crud = new CrudAlumno();
+    $number = $crud->countAlumno($nacimiento);
+    echo $number;
+    return $number;    
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,7 +77,31 @@
         
         <div class="row">
 
+               
+
             <h3><b>Década de los 40</b></h3>
+           
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                    <div class="employees">
+                        <p class="text-center employee-p"> 1940</p>
+                        <p class="counter-count">0</p>
+                       
+                    </div>
+                </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                    <div class="employees">
+                        <p class="text-center employee-p"> 1941</p>
+                        <p class="counter-count">0</p>
+                       
+                    </div>
+                </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                    <div class="employees">
+                        <p class="text-center employee-p"> 1942</p>
+                        <p class="counter-count">0</p>
+                       
+                    </div>
+                </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
                     <p class="text-center employee-p"> 1943</p>
@@ -87,7 +122,7 @@
                 <div class="design">
                    
                     <p class="text-center design-p"> 1945</p>
-                    <p class="counter-count">4</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
 
@@ -95,28 +130,28 @@
                 <div class="order">
                    
                     <p class="text-center order-p"> 1946</p>
-                    <p class="counter-count">7</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
                    
                     <p class="text-center order-p"> 1947</p>
-                    <p class="counter-count">5</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
                    
                     <p class="text-center order-p"> 1948</p>
-                    <p class="counter-count">10</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
                    
                     <p class="text-center order-p"> 1949</p>
-                    <p class="counter-count">15</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             
@@ -127,65 +162,75 @@
             <h3><b>Década de los 50</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">0</p>
                     <p class="employee-p"> 1950</p>
+                    <p class="counter-count">0</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
+                        <p class="customer-p"> 1951</p>
                     <p class="counter-count">0</p>
-                    <p class="customer-p"> 1951</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
+                        <p class="design-p"> 1952</p>
                     <p class="counter-count">0</p>
-                    <p class="design-p"> 1952</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1953</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1953</p>
+                    
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1954</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1954</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1955</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1955</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1956</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1956</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1957</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1957</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1958</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1958</p>
+                    
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1959</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1959</p>
+                   
                 </div>
             </div>
             
@@ -196,65 +241,75 @@
                 <h3><b>Década de los 60</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">879</p>
-                    <p class="employee-p"> 1960</p>
+                        <p class="employee-p"> 1960</p>
+                    <p class="counter-count">0</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
-                    <p class="counter-count">954</p>
-                    <p class="customer-p"> 1961</p>
+                        <p class="customer-p"> 1961</p>
+                    <p class="counter-count">0</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
-                    <p class="counter-count">1050</p>
-                    <p class="design-p"> 1962</p>
+                        <p class="design-p"> 1962</p>
+                    <p class="counter-count">0</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1963</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1963</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1964</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1964</p>
+                    
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1965</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1965</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1966</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1966</p>
+                    
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1967</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1967</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1968</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1968</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1969</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1969</p>
+                    
                 </div>
             </div>
             
@@ -265,65 +320,75 @@
                 <h3><b>Década de los 70</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">879</p>
-                    <p class="employee-p"> 1970</p>
+                        <p class="employee-p"> 1970</p>
+                    <p class="counter-count">0</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
-                    <p class="counter-count">954</p>
-                    <p class="customer-p"> 1971</p>
+                        <p class="customer-p"> 1971</p>
+                    <p class="counter-count">0</p>
+                  
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
-                    <p class="counter-count">1050</p>
-                    <p class="design-p"> 1972</p>
+                        <p class="design-p"> 1972</p>
+                    <p class="counter-count">0</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1973</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1974</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1975</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1976</p>
+                    <p class="counter-count">0</p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1977</p>
+                    <p class="counter-count"><?php getCountAlumno(1977)?></p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                    
                     <p class="order-p"> 1978</p>
+                    <p class="counter-count"><?php getCountAlumno(1978)?></p>
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
+                   
                     <p class="order-p"> 1979</p>
+                    <p class="counter-count"><?php getCountAlumno(1979)?></p>
                 </div>
             </div>
             
@@ -334,65 +399,78 @@
                 <h3><b>Década de los 80</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">0</p>
-                    <p class="employee-p"> 1980</p>
+                        <p class="employee-p"> 1980</p>
+                        <p class="counter-count"><?php getCountAlumno(1980)?></p>
+                  
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
-                    <p class="counter-count">0</p>
-                    <p class="customer-p"> 1981</p>
+                        <p class="customer-p"> 1981</p>
+                        <p class="counter-count"><?php getCountAlumno(1981)?></p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
-                    <p class="counter-count">0</p>
-                    <p class="design-p"> 1982</p>
+                        <p class="design-p"> 1982</p>
+                        <p class="counter-count"><?php getCountAlumno(1982)?></p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
-                    <p class="order-p"> 1983</p>
+                        <p class="order-p"> 1983</p>
+                        <p class="counter-count"><?php getCountAlumno(1983)?></p>
+                  
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
-                    <p class="counter-count">0</p>
-                    <p class="order-p"> 1984</p>
+                        <p class="order-p"> 1984</p>
+                        <p class="counter-count"><?php getCountAlumno(1984)?></p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1985</p>
+                        <p class="counter-count"><?php getCountAlumno(1985)?></p>
+                  
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+          
+                <div class="order">
+                        <p class="order-p"> 1986</p>
+                    <p class="counter-count">
+                        <?php getCountAlumno(1986)?></p>
+                   
+                </div>
+            
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
+                <div class="order">
+                        <p class="order-p"> 1987</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1985</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1988</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1986</p>
+                  
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1989</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1987</p>
-                </div>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
-                <div class="order">
-                    <p class="counter-count">0</p>
-                    <p class="order-p"> 1988</p>
-                </div>
-            </div>
-            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
-                <div class="order">
-                    <p class="counter-count">0</p>
-                    <p class="order-p"> 1989</p>
+                   
                 </div>
             </div>
             
@@ -403,65 +481,75 @@
                 <h3><b>Década de los 90</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
+                        <p class="employee-p"> 1990</p>
                     <p class="counter-count">0</p>
-                    <p class="employee-p"> 1990</p>
+                  
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
+                        <p class="customer-p"> 1991</p>
                     <p class="counter-count">0</p>
-                    <p class="customer-p"> 1991</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
+                        <p class="design-p"> 1992</p>
                     <p class="counter-count">0</p>
-                    <p class="design-p"> 1992</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1993</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1993</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1994</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1994</p>
+                  
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1995</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1995</p>
+                  
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1996</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1996</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1997</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1997</p>
+                  
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1998</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1998</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 1999</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 1999</p>
+                   
                 </div>
             </div>
             
@@ -472,35 +560,40 @@
                 <h3><b>Década del 2000</b></h3>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="employees">
-                    <p class="counter-count">879</p>
-                    <p class="employee-p"> 2000</p>
+                        <p class="employee-p"> 2000</p>
+                    <p class="counter-count">0</p>
+                    
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="customer">
-                    <p class="counter-count">954</p>
-                    <p class="customer-p"> 2001</p>
+                        <p class="customer-p"> 2001</p>
+                    <p class="counter-count">0</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="design">
-                    <p class="counter-count">1050</p>
-                    <p class="design-p"> 2002</p>
+                        <p class="design-p"> 2002</p>
+                    <p class="counter-count">0</p>
+                   
                 </div>
             </div>
 
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 2003</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 2003</p>
+                   
                 </div>
             </div>
             <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12">
                 <div class="order">
+                        <p class="order-p"> 2004</p>
                     <p class="counter-count">0</p>
-                    <p class="order-p"> 2004</p>
+                   
                 </div>
             </div>
             
@@ -533,7 +626,7 @@
     <script src="./js/jquery-1.10.2.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/modern-business.js"></script>
-    <script src="./js/counter.js"></script>
+   
     
 
 </body>
