@@ -44,7 +44,7 @@
     </nav>
     <!-- INICIO VENTANA MODAL-->
     <div class="container">
-        <form action='administrar_alumno.php' method='POST' role="form">
+        <form action='administrar_alumno.php' data-toggle="validator" method='POST' role="form">
         <div class="modal fade" id="add_new_record_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -55,32 +55,25 @@
                     <div class="modal-body">
                         <div class="form-group">
                              <label for="nombre">Nombre</label>
-                             <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="form-control" />
+                             <input type="text" id="nombre" maxlength="200" required="true" name="nombre" placeholder="Nombre" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="apellidos">Apellidos</label>
-                            <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" class="form-control" />
+                            <input type="text" id="apellidos" maxlength="200" required="true" name="apellidos" placeholder="Apellidos" class="form-control" />
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="email" class="form-control" />
+                            <input type="email" data-error="No es un email válido. Introduce otro" id="email" required="true" name="email" placeholder="email" class="form-control" />
                         </div>
 
                           <div class="form-group">
-                            <label for="nacimiento">¿En que año naciste?</label>
-                            <select class="form-control" id="nacimiento" name="nacimiento">
-                            <option>0</option>
-                                <option>1985</option>
-                                <option>1986</option>
-                                <option>1987</option>
-                                <option>1988</option>
-                                <option>1989</option>
-                            </select>
+                            <label for="nacimiento">¿En que año naciste? (Minimo 1940 - Máximo 2004)</label>
+                            <input class="form-control" data-bind="value:replyNumber" type="number" id="nacimiento" name="nacimiento" min="1940" max="2004" value="1">
                         </div>
 
                         <div class="form-group">
-                            <label for="invitados">¿Vendrás con invitados?:</label>
-                            <select class="form-control" id="invitados" name="invitados">
+                            <label for="invitados">¿Vendrás con algún invitado?:</label>
+                            <select class="form-control" required="true" id="invitados" name="invitados">
                             <option>0</option>
                                 <option>0</option>
                                 <option>1</option>
@@ -211,9 +204,9 @@
 
         <footer>
             <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Company 2013</p>
-                </div>
+                    <div class="col-lg-12">
+                            <p>Copyright &copy; Colegio Cumbres 75 aniversario </p>
+                    </div>
             </div>        </footer>
 
     </div>

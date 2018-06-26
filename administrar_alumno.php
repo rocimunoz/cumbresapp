@@ -1,6 +1,6 @@
 
 <?php
-//incluye la clase Libro y CrudLibro
+
 require_once('crud_alumno.php');
 require_once('alumno.php');
  
@@ -30,9 +30,8 @@ if (isset($_POST['nacimiento'])) {
 
 //llama a la función insertar definida en el crud
 $crud->insertar($alumno);
-$num = $crud->countAlumno(1986);
-echo $num;
-//header('Location: evento29septiembre.html');
+
+header('Location: confirmacion.html');
 
 
 ?>
